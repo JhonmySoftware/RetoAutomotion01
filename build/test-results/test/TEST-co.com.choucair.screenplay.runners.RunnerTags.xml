@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.choucair.screenplay.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="CHBOGPF34MNC5" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/prueba.feature:8 ?[0m# Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
+
+1 Scenarios (?[31m1 failed?[0m)
+8 Steps (?[31m1 failed?[0m, ?[36m5 skipped?[0m, ?[32m2 passed?[0m)
+0m24,967s
+
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: element click intercepted: Element <span class="exito-vtex-components-4-x-buttonText">...</span> is not clickable at point (684, 16). Other element would receive the click: <div class="vtex-flex-layout-0-x-flexCol  ml0 mr0 pl0 pr0    justify-center  flex flex-column h-100 w-100">...</div>
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'CHBOGPF34MNC5', ip: '10.99.56.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JQUINO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c1d286a0b4e689bd76d403cee26f8b2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at co.com.choucair.screenplay.interactions.Listproducts.performAs(Listproducts.java:32)
+	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e.CGLIB$performAs$0(<generated>)
+	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e$$FastClassByCGLIB$$14f17d77.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
+	at co.com.choucair.screenplay.tasks.ProductsSeletion.performAs(ProductsSeletion.java:33)
+	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0.CGLIB$performAs$0(<generated>)
+	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0$$FastClassByCGLIB$$272c566a.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:84)
+	at co.com.choucair.screenplay.definition.Mydefinitions.seleccione_productos_aleatoreamente(Mydefinitions.java:38)
+	at ?.Seleccione 5 productos aleatoreamente(src/test/resources/features/prueba.feature:11)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.serenitybdd.core.Serenity - ?[36m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
+-------------------------------------------------------------------(verificar-el-ingreso-correcto-al-sitio-éxito-y-elegir-los-productos-de-compra;verificar-el-ingreso-correcto-al-sitio-éxito-y-elegir-los-productos-de-compra)
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
+---------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Perform as: jhon
+[Test worker] ERROR net.serenitybdd.core.Serenity - The following error occurred: element click intercepted: Element <span class="exito-vtex-components-4-x-buttonText">...</span> is not clickable at point (684, 16). Other element would receive the click: <div class="vtex-flex-layout-0-x-flexCol  ml0 mr0 pl0 pr0    justify-center  flex flex-column h-100 w-100">...</div>
+]]></system-err>
+</testsuite>
