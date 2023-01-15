@@ -1,10 +1,11 @@
 package co.com.choucair.screenplay.definition;
 
+import co.com.choucair.screenplay.interactions.ListarProductosCart;
 import co.com.choucair.screenplay.tasks.Menus;
 import co.com.choucair.screenplay.tasks.OpenPage;
-import co.com.choucair.screenplay.tasks.ProductsSeletion;
-import co.com.choucair.screenplay.userinterfaces.PageExito;
-import cucumber.api.PendingException;
+import co.com.choucair.screenplay.tasks.SelecionProductos;
+import co.com.choucair.screenplay.tasks.SelectCantProducts;
+import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -12,6 +13,8 @@ import cucumber.api.java.es.Entonces;
 import cucumber.api.java.es.Y;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+
+import java.util.List;
 
 public class Mydefinitions {
 
@@ -32,17 +35,15 @@ public class Mydefinitions {
         OnStage.theActorCalled("jhon").wasAbleTo(Menus.submenus());
     }
 
-
-    @Y("^Seleccione (\\d+) productos aleatoreamente$")
-    public void seleccione_productos_aleatoreamente(int arg1) {
-        OnStage.theActorCalled("jhon").wasAbleTo(ProductsSeletion.games());
-
-
+    @Y("^Seleccione #(\\d+) productos aleatoreamente$")
+    public void seleccioneProductosAleatoreamente(int arg0) {
+        OnStage.theActorCalled("jhon").wasAbleTo(SelecionProductos.games());
     }
+
 
     @Y("^cada unos de los productos tenga cantidades aleatoreas entre (\\d+)-(\\d+)$")
     public void cada_unos_de_los_productos_tenga_cantidades_aleatoreas_entre(int arg1, int arg2) {
-
+        OnStage.theActorCalled("jhon").wasAbleTo(SelectCantProducts.carrito());
     }
 
     @Entonces("^Se debe validar que el nombre de los productos agregados deberá ser igual que en el carrito$")
@@ -64,5 +65,6 @@ public class Mydefinitions {
     public void el_número_de_productos_agregados_debe_ser_igual_que_en_el_carrito() {
 
     }
+
 
 }

@@ -86,58 +86,9 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/prueba.feature:8 ?[0m# Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
-
-1 Scenarios (?[31m1 failed?[0m)
-8 Steps (?[31m1 failed?[0m, ?[36m5 skipped?[0m, ?[32m2 passed?[0m)
-0m24,967s
-
-net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: element click intercepted: Element &lt;span class=&quot;exito-vtex-components-4-x-buttonText&quot;&gt;...&lt;/span&gt; is not clickable at point (684, 16). Other element would receive the click: &lt;div class=&quot;vtex-flex-layout-0-x-flexCol  ml0 mr0 pl0 pr0    justify-center  flex flex-column h-100 w-100&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'CHBOGPF34MNC5', ip: '10.99.56.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JQUINO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c1d286a0b4e689bd76d403cee26f8b2
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at co.com.choucair.screenplay.interactions.Listproducts.performAs(Listproducts.java:32)
-	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e.CGLIB$performAs$0(&lt;generated&gt;)
-	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e$$FastClassByCGLIB$$14f17d77.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
-	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
-	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at co.com.choucair.screenplay.interactions.Listproducts$$EnhancerByCGLIB$$b995779e.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
-	at co.com.choucair.screenplay.tasks.ProductsSeletion.performAs(ProductsSeletion.java:33)
-	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0.CGLIB$performAs$0(&lt;generated&gt;)
-	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0$$FastClassByCGLIB$$272c566a.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
-	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
-	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at co.com.choucair.screenplay.tasks.ProductsSeletion$$EnhancerByCGLIB$$545c7db0.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:84)
-	at co.com.choucair.screenplay.definition.Mydefinitions.seleccione_productos_aleatoreamente(Mydefinitions.java:38)
-	at ?.Seleccione 5 productos aleatoreamente(src/test/resources/features/prueba.feature:11)
+1 Scenarios (?[32m1 passed?[0m)
+8 Steps (?[32m8 passed?[0m)
+0m34,988s
 
 </pre>
 </span>
@@ -173,18 +124,16 @@ Session ID: 7c1d286a0b4e689bd76d403cee26f8b2
 
 TEST STARTED: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
 -------------------------------------------------------------------(verificar-el-ingreso-correcto-al-sitio-éxito-y-elegir-los-productos-de-compra;verificar-el-ingreso-correcto-al-sitio-éxito-y-elegir-los-productos-de-compra)
-[Test worker] ERROR net.serenitybdd.core.Serenity - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
----------------------------------------------------------------------
-[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Perform as: jhon
-[Test worker] ERROR net.serenitybdd.core.Serenity - The following error occurred: element click intercepted: Element &lt;span class=&quot;exito-vtex-components-4-x-buttonText&quot;&gt;...&lt;/span&gt; is not clickable at point (684, 16). Other element would receive the click: &lt;div class=&quot;vtex-flex-layout-0-x-flexCol  ml0 mr0 pl0 pr0    justify-center  flex flex-column h-100 w-100&quot;&gt;...&lt;/div&gt;
+TEST PASSED: Verificar el ingreso correcto al sitio Éxito y elegir los productos de compra
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -196,7 +145,7 @@ TEST FAILED WITH ERROR: Verificar el ingreso correcto al sitio Éxito y elegir l
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 12/01/2023 09:06:36 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 14/01/2023 11:01:01 PM</p>
 </div>
 </div>
 </body>
